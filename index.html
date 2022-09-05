@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <title>Joydeep's personal website</title>
 </head>
 <body>
+    <script>
+        $(document).ready(function () {
+            $("#link").click(function (e) {
+                e.preventDefault();
+                
+                window.location.href 
+                    = "https://github.com/Joydeepbhatta73/Joydeep-Bhatta/raw/master/Joydeep's%20personal%20resume.pdf";
+            });
+        });
+    </script>
     <table cellspacing="0" cellpadding="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
         <tr>
             <td> <img src="joydeep.jpg" alt="Joydeep Profile Picture"></td>
@@ -28,7 +39,16 @@
                         Call me: +91-9674028804 / +91-8585871508
                     </li>
                 </ul>
-                <h5><a href="https://www.linkedin.com/in/joydeep-bhatta-25602a1b7" target="_blank" class="btn">My LinkedIn Profile</a></h5>
+                <table>
+                    <tr>
+                        <td><h5><a href="https://www.linkedin.com/in/joydeep-bhatta-25602a1b7" target="_blank" class="btn">My LinkedIn Profile</a></h5></td>
+                        <td><h5><a id="link" href="" class="btn">
+                            Download My Resume
+                        </a></h5></td>
+                    </tr>
+                </table>
+                
+                
             </td>
         </tr>
     </table>
