@@ -9,6 +9,10 @@ img {
     height: 230px;
 }
 
+.accordion-button {
+    font-weight: bold;
+}
+
 p {
     text-align: justify;
 }
